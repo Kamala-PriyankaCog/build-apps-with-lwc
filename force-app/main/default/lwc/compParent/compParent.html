@@ -1,0 +1,20 @@
+<template>
+    <lightning-card >
+        <div class="slds-var-m-around_medium">
+            <div class="slds-grid slds-gutters slds-var-p-bottom_medium">
+                <div class="slds-col">
+                    <!--label="Parent & Child relationships"-->
+                    <!--title="Parent Component" icon-name="standard:contact"-->
+                    <lightning-button label = "parent event" variant = "brand" onclick={handleValue}></lightning-button>
+                    <p>{parentValue}</p>
+                </div>
+                <div class="slds-col">
+                    <c-comp-child onbuttonclick = {handleEvent} variant = "brand" my-name = {parentValue}></c-comp-child>         
+                </div>
+                <div class="slds-col">
+                    <lightning-button label="LMS function click" variant = "brand" onclick={publishfunction} ></lightning-button>
+                </div>
+            </div>
+        </div>  
+     </lightning-card>
+</template>

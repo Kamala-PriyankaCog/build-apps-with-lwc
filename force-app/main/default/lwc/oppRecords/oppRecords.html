@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="View Record">
+        <div >
+            <lightning-record-view-form record-id={recordId} object-api-name="Opportunity">
+                <div>                    
+                    <lightning-layout multiple-rows>
+                        <lightning-layout-item size="6">                                           
+                            <lightning-output-field field-name="Name"></lightning-output-field>  
+                        </lightning-layout-item>     
+                        <lightning-layout-item size="6">        
+                            <lightning-output-field field-name="Amount"></lightning-output-field>
+                        </lightning-layout-item>        
+                        <lightning-layout-item size="6">                    
+                            <lightning-output-field field-name="Type"></lightning-output-field>  
+                        </lightning-layout-item>                                                                                             
+                    </lightning-layout>
+                </div>
+             </lightning-record-view-form>
+        </div>
+     </lightning-card>
+</template>

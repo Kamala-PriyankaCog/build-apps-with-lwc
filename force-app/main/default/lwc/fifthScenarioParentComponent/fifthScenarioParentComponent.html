@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Parent child communication">
+        <div class="slds-var-m-around_medium"></div>
+        <c-fifth-scenario-child-component oncustom={captureEvent} msg="Hi Iam From Parent Component"></c-fifth-scenario-child-component>
+        <div class="slds-var-m-bottom_medium"></div>
+        <div class="slds-var-m-around_medium"></div>
+        <div>Message From Child : {text}</div>
+    </lightning-card>
+</template>
